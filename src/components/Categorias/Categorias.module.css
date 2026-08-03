@@ -1,0 +1,50 @@
+.secaoCategorias {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.botaoCategoria {
+    width: 150px;
+    min-height: 33px;
+    padding: 7px 10px;
+    border: 1px solid #e7d4a0;
+    border-radius: 3px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.botaoCategoria img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+}
+
+.botaoAtivo {
+    background: #daa520;
+    color: #ffffff;
+    border-color: #daa520;
+}
+
+@media (max-width: 768px) {
+    .secaoCategorias {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 375px) {
+    .botaoCategoria {
+        width: calc(50% - 5px);
+    }
+}

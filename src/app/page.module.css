@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap");
+
+.page {
+    min-height: 100vh;
+    background: #f3f3f3;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 12px;
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    position: relative;
+    overflow: hidden;
+}
+
+.headerContainer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.18) 0%,
+            rgba(0, 0, 0, 0.34) 52%,
+            rgba(0, 0, 0, 0.25) 100%);
+    pointer-events: none;
+}
+
+.headerContainer img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.headerTexto {
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.headerTexto h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 44px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.85);
+}
+
+.headerTexto p {
+    margin: 2px 0 0;
+    font-family: "Dancing Script", cursive;
+    font-size: 29px;
+    color: #daa520;
+    line-height: 1.16;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 26px 20px 50px;
+}
+
+.secaoCardapio {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.secaoCardapio h2 {
+    margin: 0;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    color: #daa520;
+    font-size: 33px;
+}
+
+.secaoQrCode {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 14px;
+    border: 1px solid #daa520;
+    background: #ffffff;
+}
+
+.secaoQrCode h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #000000;
+}
+
+.secaoQrCode p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.secaoQrCode img {
+    width: 160px;
+    height: 160px;
+    border: 6px solid #f3f3f3;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding: 0;
+    }
+
+    .headerTexto {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 22px 14px 40px;
+    }
+
+    .headerContainer img {
+        height: 260px;
+    }
+
+    .headerTexto {
+        width: 90%;
+    }
+
+    .headerTexto h1 {
+        font-size: 36px;
+    }
+
+    .headerTexto p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 375px) {
+    .headerContainer img {
+        height: 220px;
+    }
+
+    .headerTexto {
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    .headerTexto h1 {
+        font-size: 30px;
+    }
+
+    .headerTexto p {
+        font-size: 22px;
+    }
+}
