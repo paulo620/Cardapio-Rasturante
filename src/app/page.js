@@ -20,7 +20,7 @@ export default function Home() {
   const [pratosExibidos, setPratosExibidos] = useState(
     filtrarProdutos(CATEGORIA_INICIAL)
   );
-  const urlCardapio = "http://localhost:3000";
+  const urlCardapio = "https://cardapio-restaurante-chi.vercel.app/";
   const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(
     urlCardapio
   )}`;
