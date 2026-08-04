@@ -52,7 +52,7 @@
     color: #ffffff;
     font-size: 44px;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.85);
+    text-shadow: 5px 5px 10px #daa520;
 }
 
 .headerTexto p {
